@@ -79,39 +79,15 @@
     return [self initWithItemName:@"Item"];
 }
 
-- (void)setItemName:(NSString *)str
+- (void)dealloc
 {
-    _itemName = str;
+    NSLog(@"Destroyed: %@", self);
 }
 
-- (NSString *)itemName
+- (void)setContainedItem:(BNRItem *)containedItem
 {
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str
-{
-    _serialNumber = str;
-}
-
-- (NSString *)serialNumber
-{
-    return _serialNumber;
-}
-
-- (void)setValueInDollars:(int)v
-{
-    _valueInDollars = v;
-}
-
-- (int)valueInDollars
-{
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated
-{
-    return _dateCreated;
+    _containedItem = containedItem;
+    self.containedItem.container = self;
 }
 
 - (NSString *)description
