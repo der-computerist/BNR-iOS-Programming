@@ -1,0 +1,16 @@
+//
+//  main.m
+//  Homepwner
+//
+//  Created by Enrique Aliaga on 11/7/18.
+//  Copyright © 2018 Big Nerd Ranch. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "BNRAppDelegate.h"
+
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([BNRAppDelegate class]));
+    }
+}

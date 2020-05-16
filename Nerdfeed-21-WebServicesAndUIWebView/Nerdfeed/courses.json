@@ -1,0 +1,24 @@
+{
+	"courses" : [
+		{
+			"title" : "Android Programming: The Big Nerd Ranch Guide",
+			"url" : "https://www.bignerdranch.com/books/android-programming-the-big-nerd-ranch-guide-4th/"
+		},
+		{
+			"title" : "Kotlin Programming: The Big Nerd Ranch Guide",
+			"url" : "https://www.bignerdranch.com/books/kotlin-programming-the-big-nerd-ranch-guide-2/"
+		},
+		{
+			"title" : "Swift Programming: The Big Nerd Ranch Guide",
+			"url" : "https://www.bignerdranch.com/books/swift-programming-the-big-nerd-ranch-guide-second-edition/"
+		},
+		{
+			"title" : "iOS Programming: The Big Nerd Ranch Guide",
+			"url" : "https://www.bignerdranch.com/books/ios-programming-the-big-nerd-ranch-guide-sixth-edition/"
+		},
+		{
+			"title" : "Front-End Web Development: The Big Nerd Ranch Guide",
+			"url" : "https://www.bignerdranch.com/books/front-end-web-development-the-big-nerd-ranch-guide/"
+		}
+	]
+}

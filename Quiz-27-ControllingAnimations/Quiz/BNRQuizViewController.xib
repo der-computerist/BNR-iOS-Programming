@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRQuizViewController">
+            <connections>
+                <outlet property="answerLabel" destination="DD4-eL-4ER" id="b3d-7U-5tK"/>
+                <outlet property="answerLabelCenterXContainerConstraint" destination="1T0-XY-p2N" id="vO8-J2-qii"/>
+                <outlet property="questionLabel" destination="YEU-Bk-8BA" id="Jjl-x0-wG2"/>
+                <outlet property="questionLabelTrailingContainerConstraint" destination="GIv-ao-8uJ" id="d1n-hw-60E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEU-Bk-8BA">
+                    <rect key="frame" x="0.0" y="94" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-Ad-GsW">
+                    <rect key="frame" x="20" y="104" width="280" height="30"/>
+                    <color key="backgroundColor" white="0.8786424364362444" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Show Question"/>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="dkc-b4-fo1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD4-eL-4ER">
+                    <rect key="frame" x="147.5" y="355" width="25" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSr-dY-vVW">
+                    <rect key="frame" x="20" y="386" width="280" height="30"/>
+                    <color key="backgroundColor" white="0.87864243639999995" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Show Answer"/>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="fcL-Du-pPx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xS6-Ad-GsW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="0tR-kH-p3J" userLabel="Show Question.top = top + 104"/>
+                <constraint firstItem="DD4-eL-4ER" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" priority="750" id="1T0-XY-p2N"/>
+                <constraint firstItem="CSr-dY-vVW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8ia-hh-DoI"/>
+                <constraint firstAttribute="leading" secondItem="YEU-Bk-8BA" secondAttribute="trailing" priority="750" id="GIv-ao-8uJ"/>
+                <constraint firstItem="xS6-Ad-GsW" firstAttribute="top" secondItem="YEU-Bk-8BA" secondAttribute="bottom" constant="10" id="Qi7-Ct-GvF"/>
+                <constraint firstItem="xS6-Ad-GsW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Yp4-f7-Ji2"/>
+                <constraint firstAttribute="trailing" secondItem="CSr-dY-vVW" secondAttribute="trailing" constant="20" id="bVf-WI-RgR"/>
+                <constraint firstAttribute="bottom" secondItem="DD4-eL-4ER" secondAttribute="bottom" constant="104" id="cPd-2P-6ie"/>
+                <constraint firstAttribute="trailing" secondItem="xS6-Ad-GsW" secondAttribute="trailing" constant="20" id="f3A-LM-1rl"/>
+                <constraint firstItem="CSr-dY-vVW" firstAttribute="top" secondItem="DD4-eL-4ER" secondAttribute="bottom" constant="10" id="pbT-wK-ol3"/>
+            </constraints>
+            <point key="canvasLocation" x="-273.75" y="-75"/>
+        </view>
+    </objects>
+</document>
